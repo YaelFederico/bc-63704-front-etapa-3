@@ -1,0 +1,23 @@
+@use "../utils/variables";
+
+  .section-nosotros{
+    background-color: #181717;
+    padding-bottom: 2em;
+    padding-left: 2em;
+    border-bottom: solid 2px goldenrod;
+
+
+    &__title{
+        color: gold;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 0,5em;
+    }
+
+    &__p{
+        color: goldenrod;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, serif;
+        font-size: large;
+        padding-bottom: 2em;;
+    }
+  }

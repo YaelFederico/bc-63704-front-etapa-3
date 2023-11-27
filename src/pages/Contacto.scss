@@ -1,0 +1,99 @@
+@use "../utils/variables";
+
+
+
+.section-contact {
+  display: block;
+  justify-content:center;
+  flex-wrap: wrap;
+  color: goldenrod;
+  background-color: #181717;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: solid 2px goldenrod;
+
+  @media (max-width: 768px) {
+    & {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+fieldset {
+  border: solid 3px goldenrod;
+  border-radius: 5px;
+  background-color: #181717;
+  font-weight: 600;
+}
+
+.contact {
+  width: 450px;
+  height: 500px;
+
+  &__title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    color: gold;
+    margin: 25px 25px;
+    padding-bottom: 5px;
+    
+  }
+
+  &__phone,
+  &__address,
+  &__time,
+  &__facebook,
+  &__instagram {
+    color: goldenrod;
+    font-size: x-large;
+    margin-left: 10px;
+    margin-bottom: 25px;
+  }
+}
+
+.form {
+  width: 450px;
+  height: 500px;
+
+  &__title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    color: gold;
+    margin: 25px 25px;
+    padding-bottom: 5px;
+  }
+
+  &__name,
+  &__sirname,
+  &__mail,
+  &__phone,
+  &__comments {
+    color: goldenrod;
+    font-size: x-large;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+
+  &__button {
+    font-size: large;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+textarea {
+  color: black;
+  margin-left: 10px;
+  resize: vertical;
+  width: 90%;
+  height: 50px;
+  max-height: 50px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
